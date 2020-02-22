@@ -17,16 +17,24 @@ app.use(express.json());
 // Routes
 // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
 
-app.get("/", function (req, res) {
-	res.sendFile(path.join(__dirname, "../public/index.html"));
-});
+require("./public/routes/apiRoutes.js")(app);
+require("./public/routes/htmlRoutes")(app);
 
-app.get("/notes", function (req, res) {
-	res.sendFile(path.join(__dirname, "/public/notes.html"));
-});
+// app.get("/", function (req, res) {
+// 	res.sendFile(path.join(__dirname, "../public/index.html"));
+// });
+
+// app.get("/notes", function (req, res) {
+// 	res.sendFile(path.join(__dirname, "../public/notes.html"));
+// });
 
 // Server listening
 // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
 app.listen(PORT, function () {
 	console.log("App listening on PORT " + PORT);
 });
+
+
+
+
+
