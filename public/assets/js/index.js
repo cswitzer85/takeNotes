@@ -53,7 +53,8 @@ var renderActiveNote = function() {
 var handleNoteSave = function() {
   var newNote = {
     title: $noteTitle.val(),
-    text: $noteText.val()
+    text: $noteText.val(),
+    id: Math.random()
   };
 
   saveNote(newNote).then(function(data) {
@@ -74,8 +75,9 @@ var handleNoteDelete = function(event) {
   if (activeNote.id === note.id) {
     activeNote = {};
   }
-
-  deleteNote(note.id).then(function() {
+console.log("note ", note.id)
+  deleteNote(note.id).then(function(res) {
+    console.log("inside.then " , res)
     getAndRenderNotes();
     renderActiveNote();
   });
