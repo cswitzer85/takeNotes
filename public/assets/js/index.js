@@ -75,11 +75,11 @@ var handleNoteDelete = function (event) {
 	// renderes note display to blank default
 	if (activeNote.id === note.id) {
 		activeNote = {};
-  }
-  
+	}
+
 	deleteNote(note.id).then(function (res) {
-    console.log("note ", note)
-    console.log("this ", this)
+		console.log("note ", note)
+		console.log("this ", this)
 		getAndRenderNotes();
 		renderActiveNote();
 	});

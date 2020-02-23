@@ -4,30 +4,26 @@ var notesData = require("../../db/db.json");
 // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
 
 module.exports = function (app) {
-
+	// Retrieves notes from `db.json` file and returns notes to the user.
 	app.get("/api/notes", function (req, res) {
 		res.json(notesData);
 	});
-
+	// Recieves a new note to save on request body, adds new note to `db.json` file and returns new note to the user.
 	app.post("/api/notes", function (req, res) {
-		// Should recieve a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
 		notesData.push(req.body);
 		res.json(notesData);
 	});
-
-    app.delete("/api/notes/:id", function (req, res) { //Should recieve a query paramter containing the id of a note to delete.
-        for (var i = 0; i < notesData.length; i++) {
-            var noteIndex = notesData[i];
-            console.log(noteIndex)
-            var noteToDelete = req.params.id;
-                if(noteIndex.id === noteToDelete){
-                  notesData.splice(i, 1);
-                    }    
-        };
-        res.json(notesData);
-        //This means you'll need to find a way to give each note
-        //a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file,
-        //remove the note with the given `id` property,
+	// Receives a paramter with the id of note to delete, finds object with that id in `db.json` file, deletes that note from array and re-renders notes to user.
+	app.delete("/api/notes/:id", function (req, res) {
+		for (var i = 0; i < notesData.length; i++) {
+			var noteIndex = notesData[i];
+			console.log(noteIndex)
+			var noteToDelete = req.params.id;
+			if (noteIndex.id === noteToDelete) {
+				notesData.splice(i, 1);
+			}
+		};
+		res.json(notesData);
 	});
 
 };
