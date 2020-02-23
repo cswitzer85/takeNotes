@@ -1,6 +1,3 @@
-<!-- Badges-->
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 # takeNotes
 A note taking application that can be used to write, save, and delete notes using express backend and saves/retrieves data from JSON.
 
@@ -38,13 +35,13 @@ takeNotes is a locally hosted project that allows the user to add, read and dele
 
 ## Usage
 On the lading page there is a "Get Started" button, click this button to move on to the notes page.
-[![Landing Page Screen Shot][project-screenshot]](https://github.com/cswitzer85/takeNotes/blob/master/Assets/takeNotesHome.png?raw=true)
+![alt text](https://github.com/cswitzer85/takeNotes/blob/master/Assets/takeNotesHome.png?raw=true)
 
 Once on the notes page, any previously saved notes will persist. If you would like to add another note, simply type something into the Title and Text section, then click the save button on the top right. If a previous note is being displayed, click on the pencil icon to be able to add your new note.
-[![Note Page Add Screen Shot][project-screenshot]](https://github.com/cswitzer85/takeNotes/blob/master/Assets/takeNotesAdd.png?raw=true)
+![alt text](https://github.com/cswitzer85/takeNotes/blob/master/Assets/takeNotesAdd.png?raw=true)
 
 If you would like to delete a note, click the trash bin associated with that particular note.
-[![Note Page Delete Screen Shot][project-screenshot]](https://github.com/cswitzer85/takeNotes/blob/master/Assets/TakeNotesDelete.png?raw=true)
+![alt text](https://github.com/cswitzer85/takeNotes/blob/master/Assets/TakeNotesDelete.png?raw=true)
 
 ## Contributing
 This project was completed as an assignment for SMU Coding Boot Camp, and as such is not subject to any regular update or maintenance. However, if you would like to extend advise, inquire about the project or otherwise communicate about this project, please use any of the means in the contact section below.
@@ -56,6 +53,4 @@ Linked-In user name: cody-switzer-1429593a
 e-mail: cswitzer85@gmail.com
 
 ## Acknowledgements
-* [Develop docs] .html, .css and various .js documents were provided by SMU Coding Boot Camp to simulate a colaborative project in which the back-end needs to be created and tied to the front-end
-
-[linkedin-url]: https://linkedin.com/in/cody-switzer-1429593a/
+* [Develop docs] .html, .css and various .js documents were provided by SMU Coding Boot Camp to simulate a colaborative project in which the back-end needs to be created and tied to the front-end.
