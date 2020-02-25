@@ -11,6 +11,7 @@ A note taking application that can be used to write, save, and delete notes usin
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Contact](#contact)
+* [License(s)](#License(s))
 * [Acknowledgements](#acknowledgements)
 
 ## About the Project
@@ -51,6 +52,10 @@ This project was completed as an assignment for SMU Coding Boot Camp, and as suc
 GitHub user name: cswitzer85
 Linked-In user name: cody-switzer-1429593a
 e-mail: cswitzer85@gmail.com
+
+## License(s)
+* "ISC"
+
 
 ## Acknowledgements
 * [Develop docs] .html, .css and various .js documents were provided by SMU Coding Boot Camp to simulate a colaborative project in which the back-end needs to be created and tied to the front-end.
